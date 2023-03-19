@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/movies
+
+###
+GET http://localhost:3000/movies/6416dc2fbae97286bdcbb8b4
+
+###
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title" : "Creed",
+    "year" : 2012,
+    "director" : "Jack"
+}
+
+
+###
+DELETE http://localhost:3000/movies/6416dc2fbae97286bdcbb8b4
+
+
+###
+PATCH http://localhost:3000/movies/6416dc06bae97286bdcbb8b2
+Content-Type: application/json
+
+{
+    "title" : "ABCD",
+    "year" : 2013,
+    "director" : "Remo D'Souza"
+}
