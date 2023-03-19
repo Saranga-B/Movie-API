@@ -22,7 +22,9 @@ router.post('/', async (req, res) => {
     const movie = new Movie({
         title: req.body.title,
         year: req.body.year,
-        director: req.body.director
+        director: req.body.director,
+        language: req.body.language,
+        IMDb_rating: req.body.IMDb_rating
       })
       try {
         const newMovie = await movie.save()
@@ -42,6 +44,12 @@ router.patch('/:id', getmovie, async (req, res) => {
       }
       if (req.body.director != null) {
         res.movie.director = req.body.director
+      }
+      if (req.body.language != null) {
+        req.body.language= req.body.language
+      }
+      if (req.body.IMDb_rating != null) {
+        req.body.IMDb_rating = req.body.IMDb_rating
       }
       try {
         const updatedMovie = await res.movie.save()
