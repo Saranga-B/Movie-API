@@ -9,22 +9,26 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-    "title" : "Creed",
-    "year" : 2012,
-    "director" : "Jack"
+    "title" : "Ford v Ferrari",
+    "year" : 2019,
+    "director" : "James Mangold",
+    "language":"English",
+    "IMDb_rating":"8.1"
 }
 
 
 ###
-DELETE http://localhost:3000/movies/6416dc2fbae97286bdcbb8b4
+DELETE http://localhost:3000/movies/
 
 
 ###
-PATCH http://localhost:3000/movies/6416dc06bae97286bdcbb8b2
+PATCH http://localhost:3000/movies/
 Content-Type: application/json
 
 {
-    "title" : "ABCD",
-    "year" : 2013,
-    "director" : "Remo D'Souza"
+    "title" : "Ford v Ferrari",
+    "year" : 2019,
+    "director" : "James Mangold",
+    "language":"English",
+    "IMDb_rating":"8.1"
 }
